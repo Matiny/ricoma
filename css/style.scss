@@ -147,7 +147,7 @@ nav {
         padding: 0 1%;
 
         .product {
-            
+            user-select: none;
             overflow: hidden;
             border: 1px solid #ECECEC;
             border-radius: 1vw;
@@ -165,6 +165,14 @@ nav {
                 font-weight: normal;
                 font-size: 1.1vw;
             }
+            .product-desc {
+                padding: 5%;
+            }
+
+            .checkboxes {
+                padding: 15% 0;
+            }
+
             #p11, #p21, #p31, #p41 {
                 display: none;
 
@@ -174,59 +182,59 @@ nav {
                     background-size: cover;
                     display: inline-block;
                     vertical-align: text-top;
-                    width: 1.5vw;
-                    height: 1.5vw;
+                    width: 2vw;
+                    height: 2vw;
                 }
 
                 &:checked + [for="p11"]:before, &:checked + [for="p21"]:before, &:checked + [for="p31"]:before, &:checked + [for="p41"]:before  {
                     content: '';
                     background: url(../img/1check.png);
-                    width: 1.5vw;
-                    height: 1.5vw;
+                    width: 2vw;
+                    height: 2vw;
                     background-size: cover;
                     display: inline-block;
                     vertical-align: text-top;
                 }
             }
 
-            #p12 {
+            #p12, #p22, #p32, #p42 {
                 display: none;
 
-                & + [for="p12"]:before {
+                & + [for="p12"]:before, & + [for="p22"]:before, & + [for="p32"]:before, & + [for="p42"]:before {
                     content: '';
                     background: url(../img/2uncheck.png);
                     background-size: cover;
                     display: inline-block;
                     vertical-align: text-top;
-                    width: 1.5vw;
-                    height: 1.5vw;
+                    width: 2vw;
+                    height: 2vw;
                 }
 
-                &:checked + [for="p12"]:before {
+                &:checked + [for="p12"]:before, &:checked + [for="p22"]:before, &:checked + [for="p32"]:before, &:checked + [for="p42"]:before {
                     content: '';
                     background: url(../img/2check.png);
-                    width: 1.5vw;
-                    height: 1.5vw;
+                    width: 2vw;
+                    height: 2vw;
                     background-size: cover;
                     display: inline-block;
                     vertical-align: text-top;
                 }
             }
 
-            #p13 {
+            #p13, #p23, #p33, #p43 {
                 display: none;
 
-                & + [for="p13"]:before {
+                & + [for="p13"]:before,  & + [for="p23"]:before,  & + [for="p33"]:before,  & + [for="p43"]:before {
                     content: '';
                     background: url(../img/3uncheck.png);
                     background-size: cover;
                     display: inline-block;
                     vertical-align: text-top;
-                    width: 1.5vw;
-                    height: 1.5vw;
+                    width: 2vw;
+                    height: 2vw;
                 }
 
-                &:checked + [for="p13"]:before {
+                &:checked + [for="p13"]:before, &:checked + [for="p23"]:before, &:checked + [for="p33"]:before, &:checked + [for="p43"]:before {
                     content: '';
                     background: url(../img/3check.png);
                     width: 1.5vw;

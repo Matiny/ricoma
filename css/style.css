@@ -163,6 +163,10 @@ nav #cart #arrow-pic {
 }
 
 #product-group .product-wrapper .product {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   overflow: hidden;
   border: 1px solid #ECECEC;
   border-radius: 1vw;
@@ -186,6 +190,14 @@ nav #cart #arrow-pic {
   font-size: 1.1vw;
 }
 
+#product-group .product-wrapper .product .product-desc {
+  padding: 5%;
+}
+
+#product-group .product-wrapper .product .checkboxes {
+  padding: 15% 0;
+}
+
 #product-group .product-wrapper .product #p11, #product-group .product-wrapper .product #p21, #product-group .product-wrapper .product #p31, #product-group .product-wrapper .product #p41 {
   display: none;
 }
@@ -196,59 +208,59 @@ nav #cart #arrow-pic {
   background-size: cover;
   display: inline-block;
   vertical-align: text-top;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
 }
 
 #product-group .product-wrapper .product #p11:checked + [for="p11"]:before, #product-group .product-wrapper .product #p11:checked + [for="p21"]:before, #product-group .product-wrapper .product #p11:checked + [for="p31"]:before, #product-group .product-wrapper .product #p11:checked + [for="p41"]:before, #product-group .product-wrapper .product #p21:checked + [for="p11"]:before, #product-group .product-wrapper .product #p21:checked + [for="p21"]:before, #product-group .product-wrapper .product #p21:checked + [for="p31"]:before, #product-group .product-wrapper .product #p21:checked + [for="p41"]:before, #product-group .product-wrapper .product #p31:checked + [for="p11"]:before, #product-group .product-wrapper .product #p31:checked + [for="p21"]:before, #product-group .product-wrapper .product #p31:checked + [for="p31"]:before, #product-group .product-wrapper .product #p31:checked + [for="p41"]:before, #product-group .product-wrapper .product #p41:checked + [for="p11"]:before, #product-group .product-wrapper .product #p41:checked + [for="p21"]:before, #product-group .product-wrapper .product #p41:checked + [for="p31"]:before, #product-group .product-wrapper .product #p41:checked + [for="p41"]:before {
   content: '';
   background: url(../img/1check.png);
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
   background-size: cover;
   display: inline-block;
   vertical-align: text-top;
 }
 
-#product-group .product-wrapper .product #p12 {
+#product-group .product-wrapper .product #p12, #product-group .product-wrapper .product #p22, #product-group .product-wrapper .product #p32, #product-group .product-wrapper .product #p42 {
   display: none;
 }
 
-#product-group .product-wrapper .product #p12 + [for="p12"]:before {
+#product-group .product-wrapper .product #p12 + [for="p12"]:before, #product-group .product-wrapper .product #p12 + [for="p22"]:before, #product-group .product-wrapper .product #p12 + [for="p32"]:before, #product-group .product-wrapper .product #p12 + [for="p42"]:before, #product-group .product-wrapper .product #p22 + [for="p12"]:before, #product-group .product-wrapper .product #p22 + [for="p22"]:before, #product-group .product-wrapper .product #p22 + [for="p32"]:before, #product-group .product-wrapper .product #p22 + [for="p42"]:before, #product-group .product-wrapper .product #p32 + [for="p12"]:before, #product-group .product-wrapper .product #p32 + [for="p22"]:before, #product-group .product-wrapper .product #p32 + [for="p32"]:before, #product-group .product-wrapper .product #p32 + [for="p42"]:before, #product-group .product-wrapper .product #p42 + [for="p12"]:before, #product-group .product-wrapper .product #p42 + [for="p22"]:before, #product-group .product-wrapper .product #p42 + [for="p32"]:before, #product-group .product-wrapper .product #p42 + [for="p42"]:before {
   content: '';
   background: url(../img/2uncheck.png);
   background-size: cover;
   display: inline-block;
   vertical-align: text-top;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
 }
 
-#product-group .product-wrapper .product #p12:checked + [for="p12"]:before {
+#product-group .product-wrapper .product #p12:checked + [for="p12"]:before, #product-group .product-wrapper .product #p12:checked + [for="p22"]:before, #product-group .product-wrapper .product #p12:checked + [for="p32"]:before, #product-group .product-wrapper .product #p12:checked + [for="p42"]:before, #product-group .product-wrapper .product #p22:checked + [for="p12"]:before, #product-group .product-wrapper .product #p22:checked + [for="p22"]:before, #product-group .product-wrapper .product #p22:checked + [for="p32"]:before, #product-group .product-wrapper .product #p22:checked + [for="p42"]:before, #product-group .product-wrapper .product #p32:checked + [for="p12"]:before, #product-group .product-wrapper .product #p32:checked + [for="p22"]:before, #product-group .product-wrapper .product #p32:checked + [for="p32"]:before, #product-group .product-wrapper .product #p32:checked + [for="p42"]:before, #product-group .product-wrapper .product #p42:checked + [for="p12"]:before, #product-group .product-wrapper .product #p42:checked + [for="p22"]:before, #product-group .product-wrapper .product #p42:checked + [for="p32"]:before, #product-group .product-wrapper .product #p42:checked + [for="p42"]:before {
   content: '';
   background: url(../img/2check.png);
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
   background-size: cover;
   display: inline-block;
   vertical-align: text-top;
 }
 
-#product-group .product-wrapper .product #p13 {
+#product-group .product-wrapper .product #p13, #product-group .product-wrapper .product #p23, #product-group .product-wrapper .product #p33, #product-group .product-wrapper .product #p43 {
   display: none;
 }
 
-#product-group .product-wrapper .product #p13 + [for="p13"]:before {
+#product-group .product-wrapper .product #p13 + [for="p13"]:before, #product-group .product-wrapper .product #p13 + [for="p23"]:before, #product-group .product-wrapper .product #p13 + [for="p33"]:before, #product-group .product-wrapper .product #p13 + [for="p43"]:before, #product-group .product-wrapper .product #p23 + [for="p13"]:before, #product-group .product-wrapper .product #p23 + [for="p23"]:before, #product-group .product-wrapper .product #p23 + [for="p33"]:before, #product-group .product-wrapper .product #p23 + [for="p43"]:before, #product-group .product-wrapper .product #p33 + [for="p13"]:before, #product-group .product-wrapper .product #p33 + [for="p23"]:before, #product-group .product-wrapper .product #p33 + [for="p33"]:before, #product-group .product-wrapper .product #p33 + [for="p43"]:before, #product-group .product-wrapper .product #p43 + [for="p13"]:before, #product-group .product-wrapper .product #p43 + [for="p23"]:before, #product-group .product-wrapper .product #p43 + [for="p33"]:before, #product-group .product-wrapper .product #p43 + [for="p43"]:before {
   content: '';
   background: url(../img/3uncheck.png);
   background-size: cover;
   display: inline-block;
   vertical-align: text-top;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 2vw;
+  height: 2vw;
 }
 
-#product-group .product-wrapper .product #p13:checked + [for="p13"]:before {
+#product-group .product-wrapper .product #p13:checked + [for="p13"]:before, #product-group .product-wrapper .product #p13:checked + [for="p23"]:before, #product-group .product-wrapper .product #p13:checked + [for="p33"]:before, #product-group .product-wrapper .product #p13:checked + [for="p43"]:before, #product-group .product-wrapper .product #p23:checked + [for="p13"]:before, #product-group .product-wrapper .product #p23:checked + [for="p23"]:before, #product-group .product-wrapper .product #p23:checked + [for="p33"]:before, #product-group .product-wrapper .product #p23:checked + [for="p43"]:before, #product-group .product-wrapper .product #p33:checked + [for="p13"]:before, #product-group .product-wrapper .product #p33:checked + [for="p23"]:before, #product-group .product-wrapper .product #p33:checked + [for="p33"]:before, #product-group .product-wrapper .product #p33:checked + [for="p43"]:before, #product-group .product-wrapper .product #p43:checked + [for="p13"]:before, #product-group .product-wrapper .product #p43:checked + [for="p23"]:before, #product-group .product-wrapper .product #p43:checked + [for="p33"]:before, #product-group .product-wrapper .product #p43:checked + [for="p43"]:before {
   content: '';
   background: url(../img/3check.png);
   width: 1.5vw;
