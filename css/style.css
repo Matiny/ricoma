@@ -5,8 +5,8 @@
   padding: 0;
 }
 
-p, h1 {
-  margin-bottom: 0;
+button {
+  cursor: pointer;
 }
 
 #timer-bar {
@@ -107,42 +107,114 @@ nav #cart #arrow-pic {
 }
 
 #hero #left {
-  width: 53%;
+  width: 50%;
   padding-bottom: 5%;
 }
 
 #hero h1 {
-  font-size: 6vw;
+  font-size: 5.75vw;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-  line-height: 6.5vw;
+  line-height: 6.25vw;
   padding-bottom: 5%;
 }
 
 #hero .desc-wrapper {
-  padding-bottom: 3%;
+  padding-bottom: 5%;
 }
 
 #hero .hero-desc {
   font-family: 'Open Sans', sans-serif;
-  padding-bottom: 1%;
+  padding-bottom: 1.5%;
+  font-size: 1.1vw;
 }
 
 #hero button {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vw;
   background-color: black;
   -webkit-box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.6);
           box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.6);
   width: 17vw;
   color: white;
   border: none;
-  padding: 1.5%;
+  padding: 2%;
   border-radius: 2vw;
 }
 
 #hero #hero-man {
   position: absolute;
-  width: 40%;
+  width: 42.5%;
   bottom: -5%;
   right: 5%;
+}
+
+#product-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7.5% 3% 5% 3%;
+}
+
+#product-group .product-wrapper {
+  width: 25%;
+  padding: 0 1%;
+}
+
+#product-group .product-wrapper .product {
+  overflow: hidden;
+  border: 1px solid #ECECEC;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+}
+
+#product-group .product-wrapper .product img {
+  width: 100%;
+}
+
+#product-group .product-wrapper .product h1 {
+  font-size: 1.5vw;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+#product-group .product-wrapper .product p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1.1vw;
+}
+
+#product-group .product-wrapper .product #p11 + [for="p11"]:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: blue;
+}
+
+#product-group .product-wrapper .product #p11:checked + [for="p11"]:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: red;
+}
+
+#product-group .product-wrapper .product button {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black;
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 1.1vw;
+  padding: 7.5%;
 }
 /*# sourceMappingURL=style.css.map */
