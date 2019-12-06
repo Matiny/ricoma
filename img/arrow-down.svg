@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="11.943mm" width="13.79mm" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48.862299 42.315992">
- <g id="layer1" transform="translate(-252.8 -551.89)">
-  <path id="path4138" style="opacity:.5;fill:#a0a2af;fill-opacity:.94118" d="m277.23 594.2-12.216-21.158-12.216-21.158h24.431 24.431l-12.216 21.158z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13.79mm" height="11.943mm" version="1.1" viewBox="0 0 48.862 42.316" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-252.8 -551.89)">
+  <path d="m277.23 594.2-24.432-42.316h48.862l-12.216 21.158z" style="fill:#4d4d4d;opacity:.5"/>
  </g>
 </svg>

@@ -8,6 +8,7 @@ p, h1 {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 #timer-bar {
     display: flex;
@@ -81,4 +82,53 @@ nav {
             margin-left: 5%;
         }
     }
+}
+
+#hero {
+    background: url(../img/hero-bg.jpg) no-repeat center scroll;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding: 3% 5%;
+
+    #left {
+        width: 53%;
+        padding-bottom: 5%;
+    }
+
+    h1 {
+        font-size: 6vw; 
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        line-height: 6.5vw;
+        padding-bottom: 5%;
+
+    }
+
+    .desc-wrapper {
+        padding-bottom: 3%;
+    }
+    
+    .hero-desc {
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1%;
+    }
+
+    button {
+        background-color: black;
+        box-shadow: 0 .5vw 1vw rgba(0,0,0,0.6);
+        width: 17vw;
+        color: white;
+        border: none;
+        padding: 1.5%;
+        border-radius: 2vw;
+    }
+    
+    #hero-man {
+        position: absolute;
+        width: 40%;
+        bottom: -5%;
+        right: 5%;
+    }
+    
 }
