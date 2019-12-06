@@ -214,6 +214,11 @@ button {
   width: 20%;
   border: 1px solid #E6E6E7;
   z-index: 1;
+  background: white;
+  padding: 1%;
+  border-bottom-right-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+  display: none;
 }
 
 #menu #item {
@@ -241,6 +246,10 @@ button {
   font-family: 'Open Sans', sans-serif;
   font-size: 1vw;
   text-decoration: underline;
+}
+
+#menu .info {
+  padding: 0 5%;
 }
 
 #hero {
