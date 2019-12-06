@@ -11,6 +11,90 @@ button {
     cursor: pointer;
 }
 
+.checkboxes {
+    padding: 15% 0;
+}
+
+.info .checkboxes {
+    padding: 3% 0;
+}
+
+#p11, #p21, #p31, #p41 {
+    display: none;
+
+    & + [for="p11"]:before, & + [for="p21"]:before, & + [for="p31"]:before, & + [for="p41"]:before, {
+        content: '';
+        background: url(../img/1uncheck.png);
+        background-size: cover;
+        display: inline-block;
+        margin-right: 2.5%;
+        vertical-align: text-top;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    &:checked + [for="p11"]:before, &:checked + [for="p21"]:before, &:checked + [for="p31"]:before, &:checked + [for="p41"]:before  {
+        content: '';
+        background: url(../img/1check.png);
+        width: 2vw;
+        height: 2vw;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 2.5%;
+        vertical-align: text-top;
+    }
+}
+
+#p12, #p22, #p32, #p42 {
+    display: none;
+
+    & + [for="p12"]:before, & + [for="p22"]:before, & + [for="p32"]:before, & + [for="p42"]:before {
+        content: '';
+        background: url(../img/2uncheck.png);
+        background-size: cover;
+        display: inline-block;
+        margin-right: 2.5%;
+        vertical-align: text-top;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    &:checked + [for="p12"]:before, &:checked + [for="p22"]:before, &:checked + [for="p32"]:before, &:checked + [for="p42"]:before {
+        content: '';
+        background: url(../img/2check.png);
+        width: 2vw;
+        height: 2vw;
+        background-size: cover;
+        display: inline-block;
+        margin-right: 2.5%;
+        vertical-align: text-top;
+    }
+}
+
+#p13, #p23, #p33, #p43 {
+    display: none;
+
+    & + [for="p13"]:before,  & + [for="p23"]:before,  & + [for="p33"]:before,  & + [for="p43"]:before {
+        content: '';
+        background: url(../img/3uncheck.png);
+        background-size: cover;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    &:checked + [for="p13"]:before, &:checked + [for="p23"]:before, &:checked + [for="p33"]:before, &:checked + [for="p43"]:before {
+        content: '';
+        background: url(../img/3check.png);
+        width: 2vw;
+        height: 2vw;
+        background-size: cover;
+        display: inline-block;
+        vertical-align: text-top;
+    }
+}
+
 #timer-bar {
     display: flex;
     align-items: center;
@@ -53,7 +137,8 @@ button {
     
 }
 
-nav {
+#menu{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,9 +157,27 @@ nav {
     }
 
     #cart {
+        position: relative;
         width: 5%;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        
+        .count {
+            display: none;
+            top: -50%;
+            left: 25%;
+            position: absolute;
+            background-color: #D74179;
+            color: white;
+            font-weight: bold;
+            border-radius: 100%;
+            font-size: 1vw;
+            width: 1.75vw;
+            height: 1.75vw;
+            text-align: center;
+            line-height: 1.75vw;
+        }
 
         #cart-pic {
             width: 50%;
@@ -84,6 +187,38 @@ nav {
             width: 10%;
             margin-left: 5%;
         }
+    }
+
+    #cart-list {
+        top: 100%;
+        right: 3.5%;
+        position: absolute;
+        width: 20%;
+        border: 1px solid #E6E6E7;
+        z-index: 1;
+    }
+
+    #item {
+        width: 100%;
+        display: flex;
+        h1 {
+            font-size: 1.5vw;
+        }
+        .preview {
+            width: 35%;
+        
+            img {
+                width: 100%;
+                border-radius: 1vw;
+            }
+        }
+    }
+
+    .remove {
+        color: #646A70;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1vw;
+        text-decoration: underline;
     }
 }
 
@@ -171,85 +306,7 @@ nav {
                 padding: 5%;
             }
 
-            .checkboxes {
-                padding: 15% 0;
-            }
-
-            #p11, #p21, #p31, #p41 {
-                display: none;
-
-                & + [for="p11"]:before, & + [for="p21"]:before, & + [for="p31"]:before, & + [for="p41"]:before, {
-                    content: '';
-                    background: url(../img/1uncheck.png);
-                    background-size: cover;
-                    display: inline-block;
-                    margin-right: 2.5%;
-                    vertical-align: text-top;
-                    width: 2vw;
-                    height: 2vw;
-                }
-
-                &:checked + [for="p11"]:before, &:checked + [for="p21"]:before, &:checked + [for="p31"]:before, &:checked + [for="p41"]:before  {
-                    content: '';
-                    background: url(../img/1check.png);
-                    width: 2vw;
-                    height: 2vw;
-                    background-size: cover;
-                    display: inline-block;
-                    margin-right: 2.5%;
-                    vertical-align: text-top;
-                }
-            }
-
-            #p12, #p22, #p32, #p42 {
-                display: none;
-
-                & + [for="p12"]:before, & + [for="p22"]:before, & + [for="p32"]:before, & + [for="p42"]:before {
-                    content: '';
-                    background: url(../img/2uncheck.png);
-                    background-size: cover;
-                    display: inline-block;
-                    margin-right: 2.5%;
-                    vertical-align: text-top;
-                    width: 2vw;
-                    height: 2vw;
-                }
-
-                &:checked + [for="p12"]:before, &:checked + [for="p22"]:before, &:checked + [for="p32"]:before, &:checked + [for="p42"]:before {
-                    content: '';
-                    background: url(../img/2check.png);
-                    width: 2vw;
-                    height: 2vw;
-                    background-size: cover;
-                    display: inline-block;
-                    margin-right: 2.5%;
-                    vertical-align: text-top;
-                }
-            }
-
-            #p13, #p23, #p33, #p43 {
-                display: none;
-
-                & + [for="p13"]:before,  & + [for="p23"]:before,  & + [for="p33"]:before,  & + [for="p43"]:before {
-                    content: '';
-                    background: url(../img/3uncheck.png);
-                    background-size: cover;
-                    display: inline-block;
-                    vertical-align: text-top;
-                    width: 2vw;
-                    height: 2vw;
-                }
-
-                &:checked + [for="p13"]:before, &:checked + [for="p23"]:before, &:checked + [for="p33"]:before, &:checked + [for="p43"]:before {
-                    content: '';
-                    background: url(../img/3check.png);
-                    width: 1.5vw;
-                    height: 1.5vw;
-                    background-size: cover;
-                    display: inline-block;
-                    vertical-align: text-top;
-                }
-            }
+            
 
             button {
                 font-weight: 600;

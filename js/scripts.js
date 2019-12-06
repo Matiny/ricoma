@@ -29,22 +29,34 @@ $("document").ready(() => {
       // Cart!
 
       let products = [];
-      let cartAmount = products.length;
 
       let addOrRemove = (number) => {
         $("#button" + number).click(() => {
             if (products.find(product => product === "product" + number)) {
-                products = products.filter(item => item !== 'product' + number) 
+                products = products.filter(item => item !== 'product' + number)
+                $("#button" + number).text("Add to cart");
             }
             else {
-                products.push("product" + number)
+                products.unshift("product" + number);
+                $("#button" + number).text("Remove from cart");
             }
+
+            if (products.length > 0) {
+                $(".count").show().text(products.length);
+            } else {
+                $(".count").hide();
+            }
+            
             console.log(products);  
       });
       }
 
       let cartFunction = () => {
           addOrRemove(1);
+          addOrRemove(2);
+          addOrRemove(3);
+          addOrRemove(4);
+
       }
 
       cartFunction();
