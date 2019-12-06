@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-p {
+p, h1 {
     margin-bottom: 0;
 }
 
@@ -49,4 +49,36 @@ p {
         right: 2.5%;
     }
     
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #E6E6E7;
+    padding: 1% 2%;
+    h1 {
+        font-weight: 600;
+        font-size: 2vw;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        letter-spacing: .25vw;
+    }
+
+    #cart {
+        width: 5%;
+
+        #cart-pic {
+            width: 50%;
+        }
+
+        #arrow-pic {
+            width: 10%;
+            margin-left: 5%;
+        }
+    }
 }
