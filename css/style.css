@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#timer-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #1F3162;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.72);
+  padding: 0.5% 0;
+}
+
+#timer-bar #timer-text {
+  font-size: 1.25vw;
+  padding-left: 15%;
+}
+
+#timer-bar #timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18%;
+}
+
+#timer-bar #timer span {
+  margin: 0 2%;
+  width: 25%;
+}
+
+#timer-bar #timer .number {
+  font-weight: bold;
+  font-size: 1.1vw;
+  color: white;
+  letter-spacing: 0.15vw;
+}
+
+#timer-bar #timer .time {
+  font-size: 1vw;
+}
+
+#timer-bar #close {
+  position: absolute;
+  width: 1%;
+  right: 2.5%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+
+#timer-bar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #1F3162;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255,255,255,0.72);
+    padding: 0.5% 0;
+
+    #timer-text {
+        font-size: 1.25vw;
+        padding-left: 15%;
+    }
+    
+    #timer {
+        display: flex;
+        width: 18%;
+        span {
+            margin: 0 2%;
+            width: 25%;
+        }
+        .number {
+            font-weight: bold;
+            font-size: 1.1vw;
+            color: white;
+            letter-spacing: 0.15vw;
+        }
+    
+        .time {
+            font-size: 1vw;
+        }
+    }
+
+    #close {
+        position: absolute;
+        width: 1%;
+        right: 2.5%;
+    }
+    
+}
