@@ -98,6 +98,7 @@ button {
 #timer-bar {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: #1F3162;
     font-family: 'Poppins', sans-serif;
@@ -106,7 +107,6 @@ button {
 
     #timer-text {
         font-size: 1.25vw;
-        padding-left: 15%;
     }
     
     #timer {
