@@ -32,6 +32,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 18%;
+  margin: 0 1%;
 }
 
 #timer-bar #timer span {
