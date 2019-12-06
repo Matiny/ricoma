@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 * {
   margin: 0;
@@ -87,6 +87,12 @@ nav a {
 
 nav #cart {
   width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav #cart #cart-pic {
@@ -207,6 +213,7 @@ nav #cart #arrow-pic {
   background: url(../img/1uncheck.png);
   background-size: cover;
   display: inline-block;
+  margin-right: 2.5%;
   vertical-align: text-top;
   width: 2vw;
   height: 2vw;
@@ -219,6 +226,7 @@ nav #cart #arrow-pic {
   height: 2vw;
   background-size: cover;
   display: inline-block;
+  margin-right: 2.5%;
   vertical-align: text-top;
 }
 
@@ -231,6 +239,7 @@ nav #cart #arrow-pic {
   background: url(../img/2uncheck.png);
   background-size: cover;
   display: inline-block;
+  margin-right: 2.5%;
   vertical-align: text-top;
   width: 2vw;
   height: 2vw;
@@ -243,6 +252,7 @@ nav #cart #arrow-pic {
   height: 2vw;
   background-size: cover;
   display: inline-block;
+  margin-right: 2.5%;
   vertical-align: text-top;
 }
 
@@ -280,5 +290,41 @@ nav #cart #arrow-pic {
   width: 100%;
   font-size: 1.1vw;
   padding: 7.5%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  padding: 3% 7.5%;
+  padding-bottom: 5%;
+}
+
+footer img {
+  width: 12.5%;
+  margin-right: 7.5%;
+}
+
+footer .footerbox {
+  padding: 0 2.5%;
+}
+
+footer h2 {
+  font-size: 1.25vw;
+  color: #F6437D;
+  font-weight: 800;
+  padding: 3% 0;
+}
+
+footer p {
+  font-size: 1.1vw;
+  font-weight: 200;
+  color: white;
+  padding: 2.5% 0;
 }
 /*# sourceMappingURL=style.css.map */
