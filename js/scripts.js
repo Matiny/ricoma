@@ -94,8 +94,11 @@ $("document").ready(() => {
       cartFunction();
 
       $("#cart").click(() => {
-        $("#cart-list").show();
-        $("#item-wrapper").html(resultHTML);
+          if (products.length > 0) {
+            $("#cart-list").toggle();
+            $("#item-wrapper").html(resultHTML);
+          }
+        
       })
      
     
