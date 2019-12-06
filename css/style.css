@@ -186,24 +186,76 @@ nav #cart #arrow-pic {
   font-size: 1.1vw;
 }
 
-#product-group .product-wrapper .product #p11 + [for="p11"]:before {
-  content: '';
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: blue;
+#product-group .product-wrapper .product #p11, #product-group .product-wrapper .product #p21, #product-group .product-wrapper .product #p31, #product-group .product-wrapper .product #p41 {
+  display: none;
 }
 
-#product-group .product-wrapper .product #p11:checked + [for="p11"]:before {
+#product-group .product-wrapper .product #p11 + [for="p11"]:before, #product-group .product-wrapper .product #p11 + [for="p21"]:before, #product-group .product-wrapper .product #p11 + [for="p31"]:before, #product-group .product-wrapper .product #p11 + [for="p41"]:before, #product-group .product-wrapper .product #p21 + [for="p11"]:before, #product-group .product-wrapper .product #p21 + [for="p21"]:before, #product-group .product-wrapper .product #p21 + [for="p31"]:before, #product-group .product-wrapper .product #p21 + [for="p41"]:before, #product-group .product-wrapper .product #p31 + [for="p11"]:before, #product-group .product-wrapper .product #p31 + [for="p21"]:before, #product-group .product-wrapper .product #p31 + [for="p31"]:before, #product-group .product-wrapper .product #p31 + [for="p41"]:before, #product-group .product-wrapper .product #p41 + [for="p11"]:before, #product-group .product-wrapper .product #p41 + [for="p21"]:before, #product-group .product-wrapper .product #p41 + [for="p31"]:before, #product-group .product-wrapper .product #p41 + [for="p41"]:before {
   content: '';
-  margin-right: 10px;
+  background: url(../img/1uncheck.png);
+  background-size: cover;
   display: inline-block;
   vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: red;
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+#product-group .product-wrapper .product #p11:checked + [for="p11"]:before, #product-group .product-wrapper .product #p11:checked + [for="p21"]:before, #product-group .product-wrapper .product #p11:checked + [for="p31"]:before, #product-group .product-wrapper .product #p11:checked + [for="p41"]:before, #product-group .product-wrapper .product #p21:checked + [for="p11"]:before, #product-group .product-wrapper .product #p21:checked + [for="p21"]:before, #product-group .product-wrapper .product #p21:checked + [for="p31"]:before, #product-group .product-wrapper .product #p21:checked + [for="p41"]:before, #product-group .product-wrapper .product #p31:checked + [for="p11"]:before, #product-group .product-wrapper .product #p31:checked + [for="p21"]:before, #product-group .product-wrapper .product #p31:checked + [for="p31"]:before, #product-group .product-wrapper .product #p31:checked + [for="p41"]:before, #product-group .product-wrapper .product #p41:checked + [for="p11"]:before, #product-group .product-wrapper .product #p41:checked + [for="p21"]:before, #product-group .product-wrapper .product #p41:checked + [for="p31"]:before, #product-group .product-wrapper .product #p41:checked + [for="p41"]:before {
+  content: '';
+  background: url(../img/1check.png);
+  width: 1.5vw;
+  height: 1.5vw;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+#product-group .product-wrapper .product #p12 {
+  display: none;
+}
+
+#product-group .product-wrapper .product #p12 + [for="p12"]:before {
+  content: '';
+  background: url(../img/2uncheck.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+#product-group .product-wrapper .product #p12:checked + [for="p12"]:before {
+  content: '';
+  background: url(../img/2check.png);
+  width: 1.5vw;
+  height: 1.5vw;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+#product-group .product-wrapper .product #p13 {
+  display: none;
+}
+
+#product-group .product-wrapper .product #p13 + [for="p13"]:before {
+  content: '';
+  background: url(../img/3uncheck.png);
+  background-size: cover;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
+#product-group .product-wrapper .product #p13:checked + [for="p13"]:before {
+  content: '';
+  background: url(../img/3check.png);
+  width: 1.5vw;
+  height: 1.5vw;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 #product-group .product-wrapper .product button {
